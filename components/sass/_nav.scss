@@ -1,0 +1,32 @@
+.navigation {
+	float: right;
+	margin: 28px  0 0 0;
+	font-family: Arial;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	font-weight: 400px;
+	font-size: 11px;
+}
+
+.nav {
+	padding: 0;
+}
+.nav__item {
+	float: left;
+	list-style: none;
+	padding: 0 35px;
+	height: 8px;
+	a {
+		text-decoration: none;
+		border-right: 1px solid white;
+
+	}
+}
+
+// BEM Syntax
+
+/*.module__element--modifier
+
+.nav
+.nav__item
+.nav__item--active*/

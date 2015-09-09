@@ -1,0 +1,49 @@
+.box {
+	padding: rem(88) 0;
+}
+.box__title {
+	color: #e5454f;
+	font-size: em(38);
+	text-transform: uppercase;
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+.box__subtitle {
+	color: #222222;
+	line-height: 1.4;
+	font-size: em(23);
+	font-weight: 400;
+	font-style: normal;
+}
+.showcase {
+
+}
+.showcase__header {
+	border-bottom: rem(1) solid #dbdbdb;
+	border-top: rem(1) solid #dbdbdb;
+	text-transform: uppercase;
+	font-family: "Pathway Gothic One", sans-serif;
+	color: #999999;
+	overflow: hidden;
+	font-size: em(16);
+}
+.showcase__nav{
+	border-left: rem(1) solid #dbdbdb;
+	padding: rem(13) 0 rem(13) rem(15);
+	&:first-child{
+	border-left: none;
+
+	}
+}
+
+.showcase__text{
+	p {
+		font-size: em(15);
+		line-height:rem(24);
+		margin: 0 0 rem(20) 0;
+		padding: rem(15) rem(15) 0 rem(15);
+	}
+}
+
+.box__highlight{
+	background: #e5454f;
+}

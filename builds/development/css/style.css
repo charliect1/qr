@@ -1,4 +1,230 @@
-h1 {
-  color: purple; }
-  h1 span {
-    color: red; }
+/**
+
+  @rem
+--------------------------------------------------------
+  base/_function-font-em.scss
+--------------------------------------------------------
+
+// Usage: font-size: em(10);
+
+------------------------------------------------------ */
+/**
+ * Divides `$target` by declared `$font-size`.
+ *
+ * @param {Target}   $target  - desired px amount
+ * @param {Context}  $font-size (16) - root px amount
+ *
+ * @example scss
+ * // font-size: em(10);
+ *
+ * @return {$value em}
+ */
+/**
+
+  @unit
+--------------------------------------------------------
+  base/_function-u.scss
+--------------------------------------------------------
+
+// Usage: rem({number})
+
+------------------------------------------------------ */
+/**
+ * @see rem
+ * @see u
+*/
+/**
+ * Passes value and returns as pixel for IE stylesheet and rem for regular stylesheet. Used in conjunction with {rem} function
+ *
+ * @param {Values}  $values - Value to convert
+ * @param {Pixel Base}   $pixelBase (16)  - Base pixel value
+ *
+ * @requires {u} u - used inside of u function
+ *
+ * @example scss
+ * // margin: rem($value)
+ **
+ * @return {$value rem | $value px}
+ */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  background: white;
+  color: #666666;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: default;
+  font-size: 0.875em; }
+
+a {
+  text-decoration: none; }
+
+.header__main {
+  height: 71px; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto; }
+
+.row:before,
+.row:after {
+  content: "";
+  display: table; }
+
+.row:after {
+  clear: both; }
+
+[class*='col-'] {
+  float: left; }
+
+.col-lg-1 {
+  width: 8.333333%; }
+
+.col-lg-2 {
+  width: 16.666667%; }
+
+.col-lg-3 {
+  width: 25%; }
+
+.col-lg-4 {
+  width: 33.333333%; }
+
+.col-lg-5 {
+  width: 41.666667%; }
+
+.col-lg-6 {
+  width: 50%; }
+
+.col-lg-7 {
+  width: 58.333333%; }
+
+.col-lg-8 {
+  width: 66.666667%; }
+
+.col-lg-9 {
+  width: 75%; }
+
+.col-lg-10 {
+  width: 83.333333%; }
+
+.col-lg-11 {
+  width: 91.666667%; }
+
+.col-lg-12 {
+  width: 100%; }
+
+@media all and (max-width: 800px) {
+  .col-md-1 {
+    width: 16.66%; }
+  .col-md-2 {
+    width: 33.33%; }
+  .col-md-3 {
+    width: 50%; }
+  .col-md-4 {
+    width: 66.66%; }
+  .col-md-5 {
+    width: 83.33%; }
+  .col-md-6 {
+    width: 100%; } }
+
+@media all and (max-width: 650px) {
+  .col-sm-1 {
+    width: 25%; }
+  .col-sm-2 {
+    width: 50%; }
+  .col-sm-4 {
+    width: 75%; }
+  .col-sm-5 {
+    width: 100%; } }
+
+.navigation {
+  float: right;
+  margin: 28px  0 0 0;
+  font-family: Arial;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 400px;
+  font-size: 11px; }
+
+.nav {
+  padding: 0; }
+
+.nav__item {
+  float: left;
+  list-style: none;
+  padding: 0 35px;
+  height: 8px; }
+  .nav__item a {
+    text-decoration: none;
+    border-right: 1px solid white; }
+
+/*.module__element--modifier
+
+.nav
+.nav__item
+.nav__item--active*/
+.logo {
+  float: left;
+  display: inline-block; }
+  .logo h1 {
+    float: left;
+    background: #e5454f;
+    margin: 0;
+    position: relative;
+    left: -27px;
+    padding: 20px 28px 22px 28px; }
+
+.logo__link {
+  color: white;
+  width: 106px;
+  height: 29px;
+  text-indent: -9999em; }
+
+.box {
+  padding: 88px 0; }
+
+.box__title {
+  color: #e5454f;
+  font-size: 2.7142857143em;
+  text-transform: uppercase;
+  font-family: 'Pathway Gothic One', sans-serif; }
+
+.box__subtitle {
+  color: #222222;
+  line-height: 1.4;
+  font-size: 1.6428571429em;
+  font-weight: 400;
+  font-style: normal; }
+
+.showcase__header {
+  border-bottom: 1px solid #dbdbdb;
+  border-top: 1px solid #dbdbdb;
+  text-transform: uppercase;
+  font-family: "Pathway Gothic One", sans-serif;
+  color: #999999;
+  overflow: hidden;
+  font-size: 1.1428571429em; }
+
+.showcase__nav {
+  border-left: 1px solid #dbdbdb;
+  padding: 13px 0 13px 15px; }
+  .showcase__nav:first-child {
+    border-left: none; }
+
+.showcase__text p {
+  font-size: 1.0714285714em;
+  line-height: 24px;
+  margin: 0 0 20px 0;
+  padding: 15px 15px 0 15px; }
+
+.box__highlight {
+  background: #e5454f; }
